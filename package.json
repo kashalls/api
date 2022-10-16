@@ -8,6 +8,7 @@
   "license": "The Unlicense",
   "dependencies": {
     "@fastify/mongodb": "^6.1.0",
+    "dotenv": "^16.0.3",
     "fastify": "^4.8.1"
   }
 }
