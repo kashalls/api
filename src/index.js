@@ -1,6 +1,7 @@
 import Fastify from 'fastify'
 const fastify = Fastify({
-    logger: true
+    logger: true,
+    trustProxy: true
 })
 
 fastify.get("/", async (request, reply) => {
