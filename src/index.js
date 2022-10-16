@@ -9,6 +9,7 @@ fastify.get("/", async (request, reply) => {
 })
 
 fastify.post('/eternal/balance', async (request, reply) => {
+    console.log(request.body)
     return request.body
 })
 
