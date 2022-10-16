@@ -1,0 +1,12 @@
+{
+  "name": "api.kashall.dev",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "repository": "https://github.com/Kashalls/api.kashall.dev.git",
+  "author": "Kashalls <kashalls@pm.me>",
+  "license": "The Unlicense",
+  "dependencies": {
+    "fastify": "^4.8.1"
+  }
+}
