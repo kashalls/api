@@ -15,7 +15,7 @@ fastify.get("/", async (request, reply) => {
 })
 
 fastify.post('/eternal/balance', async (request, reply) => {
-    const balances = this.mongo.db.collection('balances')
+    const balances = fastify.mongo.db.collection('balances')
     const { balance, uuid } = request.body;
     const result = await balances.insertOne({ balance, uuid, date: new Date() })
     console.log(result)
