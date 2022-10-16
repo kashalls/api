@@ -7,6 +7,7 @@
   "author": "Kashalls <kashalls@pm.me>",
   "license": "The Unlicense",
   "dependencies": {
+    "@fastify/mongodb": "^6.1.0",
     "fastify": "^4.8.1"
   }
 }
