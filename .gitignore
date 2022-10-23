@@ -89,3 +89,4 @@ typings/
 
 # JWT Keys
 *.pem
+*.key
