@@ -145,15 +145,19 @@ fastify.decorate('eternalAuthenticate', async (request, reply) => {
             reply.code(401)
             return {
                 statusCode: 401,
-                code: "FST_JWT_NO_AUTHORIZATION_IN_HEADER",
+                code: "AUTHORIZATION_INVALID",
                 error: "Unauthorized",
-                message: "No Authorization was found in request.headers"
+                message: "The provided authorization token does not seem to be valid."
             }
         }
-        console.log(user, user.apiKey.jti)
-
     } catch (error) {
-        return reply.send(error)
+        reply.code(401)
+        return {
+            statusCode: 401,
+            code: "AUTHORIZATION_INVALID",
+            error: "Unauthorized",
+            message: "The provided authorization token does not seem to be valid."
+        }
     }
 })
 
@@ -238,6 +242,31 @@ fastify.post('/eternal/balance', { ...requireAuth, schema }, async (request, rep
         })
     }
     return { acknowledged: result.acknowledged }
+})
+
+fastify.get('/eternal/:uuid', { ...requireAuth }, async (request, reply) => {
+    const uuid = request.params.uuid;
+    if (!uuid) {
+        reply.code(400)
+        throw new Error('Please specify a uuid to lookup.')
+    }
+
+    const users = fastify.mongo.db.collection('users')
+    const balances = fastify.mongo.db.collection('balances')
+
+    const userExists = await users.findOne({ _id: uuid })
+    if (!userExists) throw new Error('User does not exist.');
+    if (!userExists.meta.public) {
+        if (request.user.sub !== userExists._id) {
+            reply.code(403)
+            throw new Error('User does not have access to this resource.')
+        }
+    }
+
+    const bal = await balances.findOne({ uuid }, { sort: { date: -1 }, limit: 1 })
+    delete bal._id
+
+    return bal;
 })
 
 const start = async () => {
