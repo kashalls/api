@@ -180,7 +180,7 @@ fastify.post('/eternal/create-user', async (request, reply) => {
     const jti = uuidv4()
     const token = await fastify.jwt.sign({ sub: uuid, jti });
 
-    const user = { _id: uuid, created: new Date(), verified: null, verifyCode: code, apiKey: { token, jti }, meta: { verified: false, public: false, hidden: false, admin: false } }
+    const user = { _id: uuid, created: new Date(), code, api: { token, jti }, meta: { verified: false, public: false, hidden: false, admin: false } }
     const newUser = await users.insertOne(user)
     if (!newUser.acknowledged) {
         console.error(newUser)
@@ -267,6 +267,17 @@ fastify.get('/eternal/:uuid', { ...requireAuth }, async (request, reply) => {
     delete bal._id
 
     return bal;
+})
+
+fastify.get('/eternal/public', async (request, reply) => {
+    const users = fastify.mongo.db.collection('users')
+    const publicUsers = await users.find({ "meta.public": true }).toArray()
+
+    const data = []
+    for (const user of publicUsers) {
+        data.push(user._id)
+    }
+    return data
 })
 
 const start = async () => {
