@@ -10,13 +10,14 @@ const __dirname = dirname(__filename)
 import Fastify from 'fastify'
 import autoload from '@fastify/autoload'
 import fastifyPrintRoutes from 'fastify-print-routes' 
+import cors from '@fastify/cors'
 
 const fastify = Fastify({
     logger: true,
     trustProxy: true
 })
 
-fastify.register(require('@fastify/cors'), () => (req, callback) => {
+fastify.register(cors, () => (req, callback) => {
 	const corsOptions = {
 		// This is NOT recommended for production as it enables reflection exploits
 		origin: true
