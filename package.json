@@ -8,6 +8,7 @@
   "license": "The Unlicense",
   "dependencies": {
     "@fastify/autoload": "^5.4.1",
+    "@fastify/cors": "^8.1.1",
     "@fastify/jwt": "^6.3.2",
     "@fastify/mongodb": "^6.1.0",
     "@fastify/websocket": "^7.1.0",
