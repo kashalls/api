@@ -22,7 +22,8 @@ export default async function (fastify) {
         } 
 
         // Its probably a str
-         const possible = await uuids.find({ "username": { $regex: search } })
+         const possible = await uuids.find({ "username": { $regex: `${string.replace(/[^a-z0-9]/gi, '')}`, $options: 'i' } })
+         console.log(possible)
          if (!possible || possible.length === 0) {
             return []
          }
