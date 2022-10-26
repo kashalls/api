@@ -15,6 +15,7 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.8.1",
     "fastify-plugin": "^4.3.0",
+    "fastify-print-routes": "^2.0.6",
     "uuid": "^9.0.0"
   }
 }
