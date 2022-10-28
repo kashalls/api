@@ -20,7 +20,7 @@ function plugin(fastify, options, next) {
             connection.socket.id = uuidv4();
             connection.socket.pingthing = {
                 timer: setInterval(() => {
-                    if (!connection.socket.pingthing.pinged) connection.socket.close(1006, 'HEARTBEAT_MISSED')
+                    if (!connection.socket.pingthing.pinged) connection.socket.close(4000, 'HEARTBEAT_MISSED')
                     connection.socket.pingthing.pinged = false
                 }, 35000),
                 pinged: false
