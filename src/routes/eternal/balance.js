@@ -10,8 +10,8 @@ export default async function (fastify) {
         if (!date) date = new Date()
     
         const result = await balances.insertOne({ balance, date, address, reason, uuid })
-        if (uuid in subscriptions) {
-            subscriptions[uuid].forEach((socketId) => {
+        if (uuid in fastify.subscriptions) {
+            fastify.subscriptions[uuid].forEach((socketId) => {
                 const [socket] = Array.from(fastify.websocketServer.clients).filter((client) => client.id === socketId)
                 if (!socket) return;
                 
