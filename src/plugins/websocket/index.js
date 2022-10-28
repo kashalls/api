@@ -36,7 +36,7 @@ function plugin(fastify, options, next) {
             connection.socket.on('message', async (message) => {
                 const [err, result] = safeJsonParse(message.toString())
                 if (err || !result.op) return connection.socket.close(4006, 'invalid_payload')
-                if (result.op !== 3 && result.d == null || typeof result.d !== 'object' || Object.keys(result.d).length === 0) {
+                if (result.op !== 3 && (result.d == null || typeof result.d !== 'object' || Object.keys(result.d).length === 0)) {
                     return connection.socket.close(4005, 'requires_data_object')
                 }
                 switch (result.op) {
