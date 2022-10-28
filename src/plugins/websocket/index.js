@@ -1,6 +1,8 @@
 import fastifyPlugin from 'fastify-plugin'
 import FastifyWS from '@fastify/websocket'
 
+import { v4 as uuidv4 } from 'uuid'
+
 function plugin(fastify, options, next) {
 
     fastify.decorate('subscriptions', {})
