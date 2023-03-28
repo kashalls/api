@@ -63,9 +63,9 @@
     mongodb "^4.0.1"
 
 "@fastify/websocket@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@fastify/websocket/-/websocket-7.1.1.tgz#dfaba447f846db7432b6f9f81c8fb73e6cc470a6"
-  integrity sha512-8lvB/E6p/o3MlmHzM2NJ19ixteI6Ckw0xOebLfoHoORPmpvCWqSp8+HLz4Gc6HrChH4vM9VcSWAK8jYuTT08hQ==
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@fastify/websocket/-/websocket-7.2.0.tgz#3b39cc0c821c1334cb8ddac93d9673ce52084742"
+  integrity sha512-vhWQCT0I5a1JIKc34LXHQ2earW7kViYvhGn5x+lZr8TIOJKmx6NJk0Bw9zGWakulXhMsu/0y89QnsUnHiII9ag==
   dependencies:
     fastify-plugin "^4.0.0"
     ws "^8.0.0"
@@ -332,7 +332,12 @@ fastfall@^1.5.0:
   dependencies:
     reusify "^1.0.0"
 
-fastify-plugin@^4.0.0, fastify-plugin@^4.2.1, fastify-plugin@^4.3.0:
+fastify-plugin@^4.0.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.0.tgz#8b853923a0bba6ab6921bb8f35b81224e6988d91"
+  integrity sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==
+
+fastify-plugin@^4.2.1, fastify-plugin@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.3.0.tgz#c6eaa87a7a0d6d1d16129e43e31d6bc1d8868e53"
   integrity sha512-M3+i368lV0OYTJ5TfClIoPKEKSOF7112iiPdwgfSR0gN98BjA1Nk+c6oBHtfcVt9KiMxl+EQKHC1QNWo3ZOpYQ==
@@ -823,9 +828,9 @@ whatwg-url@^11.0.0:
     webidl-conversions "^7.0.0"
 
 ws@^8.0.0:
-  version "8.9.0"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.9.0.tgz#2a994bb67144be1b53fe2d23c53c028adeb7f45e"
-  integrity sha512-Ja7nszREasGaYUYCI2k4lCKIRTt+y7XuqVoHR44YpI49TtryyqbqvDMn5eqfW7e6HzTukDRIsXqzVHScqRcafg==
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
+  integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
 
 xtend@^4.0.0, xtend@^4.0.2:
   version "4.0.2"
