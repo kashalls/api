@@ -32,9 +32,9 @@
   integrity sha512-E8Hfdvs1bG6u0N4vN5Nty6JONUfTdOciyD5rn8KnEsLKIenvOVcr210BQR9t34PRkNyjqnMLGk3e0BsaxRdL+g==
 
 "@fastify/error@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.0.0.tgz#bfcb7b33cec0196413083a91ef2edc7b2c88455b"
-  integrity sha512-dPRyT40GiHRzSCll3/Jn2nPe25+E1VXc9tDwRAIKwFCxd5Np5wzgz1tmooWG3sV0qKgrBibihVoCna2ru4SEFg==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.2.0.tgz#9010e0acfe07965f5fc7d2b367f58f042d0f4106"
+  integrity sha512-KAfcLa+CnknwVi5fWogrLXgidLic+GXnLjijXdpl8pvkvbXU5BGa37iZO9FGvsh9ZL4y+oFi5cbHBm5UOG+dmQ==
 
 "@fastify/fast-json-stringify-compiler@^4.1.0":
   version "4.1.0"
@@ -44,13 +44,13 @@
     fast-json-stringify "^5.0.0"
 
 "@fastify/jwt@^6.3.2":
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-6.3.2.tgz#f29ba7e5239f07b3941bf9f63777b20e5a798149"
-  integrity sha512-LD41UNS55o1HyUlCiR1G2fDtqebvsSaxfWsVuerSLmyGWbCjfzNOPjEs4yUvMj2NjbV73ZzR3ZtR64vr1TeFYA==
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-6.7.1.tgz#7ebbb7844eecf5bd4da12a878a8d0b1ccb28413e"
+  integrity sha512-pvRcGeyF2H1U+HXaxlRBd6s1y99vbSZjhpxTWECIGIhMXKRxBTBSUPRF7LJGONlW1/pZstQ0/Dp/ZxBFlDuEnw==
   dependencies:
     "@fastify/error" "^3.0.0"
     "@lukeed/ms" "^2.0.0"
-    fast-jwt "^1.5.1"
+    fast-jwt "^2.0.0"
     fastify-plugin "^4.0.0"
     steed "^1.1.3"
 
@@ -164,7 +164,7 @@ archy@^1.0.0:
   resolved "https://registry.yarnpkg.com/archy/-/archy-1.0.0.tgz#f9c8c13757cc1dd7bc379ac77b2c62a5c2868c40"
   integrity sha512-Xg+9RwCg/0p32teKdGMPTPnVXKD0w3DfHnFTficozsAgsvq2XenPJq/MYpzzQ/v8zrOyJn6Ds39VA4JIDwFfqw==
 
-asn1.js@^5.3.0:
+asn1.js@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-5.4.1.tgz#11a980b84ebb91781ce35b0fdc2ee294e3783f07"
   integrity sha512-+I//4cYPccV8LdmBLiX8CYvf9Sp3vQsrqu2QNXRcrbiWvcx/UdlFiqUJJzxRQxgsZmvhXhn4cSKeSmoFjVdupA==
@@ -294,14 +294,14 @@ fast-json-stringify@^5.0.0:
     fast-uri "^2.1.0"
     rfdc "^1.2.0"
 
-fast-jwt@^1.5.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-1.7.1.tgz#c910fcf27f741faca5d181ae8b5941a9c638614a"
-  integrity sha512-HdDR/k2d3qgUHDVwyhzYdHG/EK+IGhDGZFNidlSvCpVIhWMce8UYXUjx8hWEDhvOA032qoCtO1f/d/VcuzWhzA==
+fast-jwt@^2.0.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-2.2.1.tgz#422adeca0b95b52e17d7fe0f541ee523a49ba159"
+  integrity sha512-r5zKugIE/4ZgGv98fE6wtIglkOwMVJOlYVa/nXyivAV56sLtAtH1eJX+WiZAwOgy387PJeZdBQsjfJhoPwOqvA==
   dependencies:
-    asn1.js "^5.3.0"
+    asn1.js "^5.4.1"
     ecdsa-sig-formatter "^1.0.11"
-    mnemonist "^0.39.0"
+    mnemonist "^0.39.5"
 
 fast-querystring@^1.0.0:
   version "1.0.0"
@@ -370,7 +370,14 @@ fastparallel@^2.2.0:
     reusify "^1.0.4"
     xtend "^4.0.2"
 
-fastq@^1.3.0, fastq@^1.6.1:
+fastq@^1.3.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.15.0.tgz#d04d07c6a2a68fe4599fea8d2e103a937fae6b3a"
+  integrity sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==
+  dependencies:
+    reusify "^1.0.4"
+
+fastq@^1.6.1:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.13.0.tgz#616760f88a7526bdfc596b7cab8c18938c36b98c"
   integrity sha512-YpkpUnK8od0o1hmeSc7UUs/eB/vIPWJYjKck2QKIzAf71Vm1AAQ3EbuZB3g2JIy+pg+ERD0vqI79KyZiB2e2Nw==
@@ -482,10 +489,10 @@ mnemonist@0.39.4:
   dependencies:
     obliterator "^2.0.1"
 
-mnemonist@^0.39.0:
-  version "0.39.3"
-  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.3.tgz#8340fc2e180b0dff20dca0a44f7af13639ca1ccb"
-  integrity sha512-CQ9Nq2TjXH+bybu89QHHrJnv3FnGtozaQPna3gvGpgHSJhyfHR2khMN6EOL/Z1b6ikmbZgCUD2eOBtTS9FOdFw==
+mnemonist@^0.39.5:
+  version "0.39.5"
+  resolved "https://registry.yarnpkg.com/mnemonist/-/mnemonist-0.39.5.tgz#5850d9b30d1b2bc57cc8787e5caa40f6c3420477"
+  integrity sha512-FPUtkhtJ0efmEFGpU14x7jGbTB+s18LrzRL2KgoWz9YvcY3cPomz8tih01GbHwnGk/OmkOKfqd/RAQoc8Lm7DQ==
   dependencies:
     obliterator "^2.0.1"
 
