@@ -332,9 +332,9 @@ fastify-print-routes@^2.0.6:
     table "^6.8.1"
 
 fastify@^4.8.1:
-  version "4.16.1"
-  resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.16.1.tgz#66dd90d7b0a832ecd6e179c67d2d36a19b6368b6"
-  integrity sha512-u+j25xNxy7rWIA7zogycId0I1vpo8goqGxi8tI33UAugx9RRtZUi+hSvNrLjZ3imWOOcbP1UT7dLps3pOyD/eg==
+  version "4.16.3"
+  resolved "https://registry.yarnpkg.com/fastify/-/fastify-4.16.3.tgz#c4d9965ffc80a094dfcd686cddc87452145af5fe"
+  integrity sha512-W45bWZdjAcVxFUBubzkmiMp3VrIRpsqUP6D0NS2Qb1BjTSNNT1NxAubzM8tdMyC5mIBymtvPE3B+DYmItc1rlQ==
   dependencies:
     "@fastify/ajv-compiler" "^3.5.0"
     "@fastify/error" "^3.0.0"
@@ -342,6 +342,7 @@ fastify@^4.8.1:
     abstract-logging "^2.0.1"
     avvio "^8.2.0"
     fast-content-type-parse "^1.0.0"
+    fast-json-stringify "^5.7.0"
     find-my-way "^7.6.0"
     light-my-request "^5.6.1"
     pino "^8.5.0"
