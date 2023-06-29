@@ -32,9 +32,9 @@
   integrity sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==
 
 "@fastify/error@^3.0.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.2.0.tgz#9010e0acfe07965f5fc7d2b367f58f042d0f4106"
-  integrity sha512-KAfcLa+CnknwVi5fWogrLXgidLic+GXnLjijXdpl8pvkvbXU5BGa37iZO9FGvsh9ZL4y+oFi5cbHBm5UOG+dmQ==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@fastify/error/-/error-3.3.0.tgz#eba790082e1144bfc8def0c2c8ef350064bc537b"
+  integrity sha512-dj7vjIn1Ar8sVXj2yAXiMNCJDmS9MQ9XMlIecX2dIzzhjSHCyKo4DdXjXMs7wKW2kj6yvVRSpuQjOZ3YLrh56w==
 
 "@fastify/error@^3.2.0":
   version "3.2.1"
@@ -49,9 +49,9 @@
     fast-json-stringify "^5.7.0"
 
 "@fastify/jwt@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-7.0.0.tgz#b3ebfb762bcc59b98fd595ed94900262454b03cf"
-  integrity sha512-y8n7qhBb/U+qWRUJzjZ+SJckv9wmOrA1eC/lM34SnOopt7VlK3hdfox7T3iuurAWVb8HjS9GxmZx+zFZO+Vb5A==
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@fastify/jwt/-/jwt-7.2.0.tgz#f4a994571a389776b6b430081f4c7d3927583db8"
+  integrity sha512-ONKobJVfFKaqUU3OEWHnkV0HVyJFfa+kzj8gEODEskhIXcf0Y8Trzsjca/Rl54VOsa5QnSgkZEXUpvChd3eUdQ==
   dependencies:
     "@fastify/error" "^3.0.0"
     "@lukeed/ms" "^2.0.0"
@@ -290,9 +290,9 @@ fast-json-stringify@^5.7.0:
     rfdc "^1.2.0"
 
 fast-jwt@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-3.0.0.tgz#943d773bbc499e44ec62c28dd67db442f257ef99"
-  integrity sha512-25OVhHf3pym8dgfROhi6/PVFlhjn0RNSWruzbIErXU36SAeDDDFOEEStXwSuYORJpiJh/CFXAMzDk0xa0ktJLQ==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-3.1.1.tgz#d663f008370a061f8f490c9ae57ff4aed63c0052"
+  integrity sha512-c6gqmiMU9kUIMs0XcsnnpBMA4A+zi/XULA47r6hYoLR7s1teJ+LwviwZdttCeTZ+F5ZuHlRigNe98C4qN6h4pw==
   dependencies:
     asn1.js "^5.4.1"
     ecdsa-sig-formatter "^1.0.11"
