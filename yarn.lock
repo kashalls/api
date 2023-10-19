@@ -12,9 +12,7 @@
     fast-uri "^2.0.0"
 
 "@fastify/autoload@^5.4.1":
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/@fastify/autoload/-/autoload-5.7.1.tgz#bd5fd2f496d3ef8c6f41bbab6666eae04bd260e6"
-  integrity sha512-F5c94MYAF0tacVu6X4/1ojO7fzmgrJXsqitDtpqknXgiHZpeFNhYSnNCUHPz6UDRKsfkDohmh0fiPTtOd8clzQ==
+  version "5.8.0"
   dependencies:
     pkg-up "^3.1.0"
 
