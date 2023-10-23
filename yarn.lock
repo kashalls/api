@@ -328,9 +328,7 @@ fastify-plugin@^4.0.0, fastify-plugin@^4.3.0:
   integrity sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==
 
 fastify-print-routes@^2.0.6:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/fastify-print-routes/-/fastify-print-routes-2.1.0.tgz#d881c1efefcd03ecb39df0f7b18cdaddf28d2c45"
-  integrity sha512-R91MYrC2fvJZ2tVIJ3C1Oh0arbBpyBV3QcN0PA7s8kG4uwsaF6OE8xUWth7JDxNNuvH+avumAT+nb36BTIdgtg==
+  version "2.2.0"
   dependencies:
     acquerello "^1.0.12"
     fastify-plugin "^4.3.0"
