@@ -75,7 +75,7 @@
     fastify-plugin "^4.0.0"
     ws "^8.0.0"
 
-"@lukeed/ms@^2.0.0":
+"@lukeed/ms@^2.0.0", "@lukeed/ms@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@lukeed/ms/-/ms-2.0.1.tgz#3c2bbc258affd9cc0e0cc7828477383c73afa6ee"
   integrity sha512-Xs/4RZltsAL7pkvaNStUQt7netTkyxrS0K+RILcVr3TRMS/ToOg4I6uNfhB9SlGsnWBym4U+EaXq0f0cEMNkHA==
@@ -290,10 +290,11 @@ fast-json-stringify@^5.7.0:
     rfdc "^1.2.0"
 
 fast-jwt@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-3.1.1.tgz#d663f008370a061f8f490c9ae57ff4aed63c0052"
-  integrity sha512-c6gqmiMU9kUIMs0XcsnnpBMA4A+zi/XULA47r6hYoLR7s1teJ+LwviwZdttCeTZ+F5ZuHlRigNe98C4qN6h4pw==
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/fast-jwt/-/fast-jwt-3.3.2.tgz#08812282cd9ca0d1f7060987d3e527f84e364f88"
+  integrity sha512-H+JYxaFy2LepiC1AQWM/2hzKlQOWaWUkEnu/yebhYu4+ameb3qG77WiRZ1Ct6YBk6d/ESsNguBfTT5+q0XMtKg==
   dependencies:
+    "@lukeed/ms" "^2.0.1"
     asn1.js "^5.4.1"
     ecdsa-sig-formatter "^1.0.11"
     mnemonist "^0.39.5"
