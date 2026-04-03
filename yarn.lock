@@ -110,10 +110,10 @@ abstract-logging@^2.0.1:
   resolved "https://registry.yarnpkg.com/abstract-logging/-/abstract-logging-2.0.1.tgz#6b0c371df212db7129b57d2e7fcf282b8bf1c839"
   integrity sha512-2BjRTZxTPvheOvGbBslFSYOUkr+SjPtOnrLP33f+VIWLzezQpZcqVg7ja3L4dBXmzzgwT+a029jRx5PCi3JuiA==
 
-acquerello@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/acquerello/-/acquerello-1.0.12.tgz#2f606950d836279dcd7b2f45481f01e7e0f14b73"
-  integrity sha512-6yCYGUNctkYqF7DLmm0D/CxlRmM/OrzyuHOU+mbaO6VRxHmRg4EV0phvyBexRt6jTyDtEQIb09YFiwu5LExXsA==
+acquerello@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/acquerello/-/acquerello-4.0.3.tgz#232bfab262f4b6d8d103794d4a104c8ed4d2671f"
+  integrity sha512-MGkxfQ4AC2HDycZ12kDrKab9GbPChraCjfJz6ySbV04zthNrcrijbpPJLwap6wP4Ij0T8TbBl9Y4TMkzQinmiA==
 
 ajv-formats@^2.1.1:
   version "2.1.1"
@@ -327,14 +327,20 @@ fastify-plugin@^4.0.0, fastify-plugin@^4.3.0:
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-4.5.0.tgz#8b853923a0bba6ab6921bb8f35b81224e6988d91"
   integrity sha512-79ak0JxddO0utAXAQ5ccKhvs6vX2MGyHHMMsmZkBANrq3hXc1CHzvNPHOcvTsVMEPl5I+NT+RO4YKMGehOfSIg==
 
-fastify-print-routes@^2.0.6:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/fastify-print-routes/-/fastify-print-routes-2.1.0.tgz#d881c1efefcd03ecb39df0f7b18cdaddf28d2c45"
-  integrity sha512-R91MYrC2fvJZ2tVIJ3C1Oh0arbBpyBV3QcN0PA7s8kG4uwsaF6OE8xUWth7JDxNNuvH+avumAT+nb36BTIdgtg==
+fastify-plugin@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-5.1.0.tgz#7083e039d6418415f9a669f8c25e72fc5bf2d3e7"
+  integrity sha512-FAIDA8eovSt5qcDgcBvDuX/v0Cjz0ohGhENZ/wpc3y+oZCY2afZ9Baqql3g/lC+OHRnciQol4ww7tuthOb9idw==
+
+fastify-print-routes@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/fastify-print-routes/-/fastify-print-routes-5.0.1.tgz#c2030057a436cd45b3bf84bf5259929c7aed02af"
+  integrity sha512-tCIDnUyl6ZDhesuhLczbCdlLLpVPv+lFMYQ01UpwN5y6UNREte9vQ6DKh8wnAXrCJEM/Y8RjAL8Nz52eBklirA==
   dependencies:
-    acquerello "^1.0.12"
-    fastify-plugin "^4.3.0"
-    table "^6.8.1"
+    acquerello "^4.0.3"
+    fastify-plugin "^5.1.0"
+    table "^6.9.0"
+    zod "^4.1.13"
 
 fastify@^4.8.1:
   version "4.18.0"
@@ -755,10 +761,10 @@ strip-ansi@^6.0.1:
   dependencies:
     ansi-regex "^5.0.1"
 
-table@^6.8.1:
-  version "6.8.1"
-  resolved "https://registry.yarnpkg.com/table/-/table-6.8.1.tgz#ea2b71359fe03b017a5fbc296204471158080bdf"
-  integrity sha512-Y4X9zqrCftUhMeH2EptSSERdVKt/nEdijTOacGD/97EKjhQ/Qs8RTlEGABSJNNN8lac9kheH+af7yAkEWlgneA==
+table@^6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/table/-/table-6.9.0.tgz#50040afa6264141c7566b3b81d4d82c47a8668f5"
+  integrity sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==
   dependencies:
     ajv "^8.0.1"
     lodash.truncate "^4.4.2"
@@ -824,3 +830,8 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
+
+zod@^4.1.13:
+  version "4.3.6"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-4.3.6.tgz#89c56e0aa7d2b05107d894412227087885ab112a"
+  integrity sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==
